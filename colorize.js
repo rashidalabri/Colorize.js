@@ -40,5 +40,3 @@ function colorize(id, luminosity) {
 	}
 	document.getElementById(id).style.backgroundColor = ColorLuminance(rgbToHex(r, g, b), luminosity);
 }
-
-setInterval(colorize, 50, 'body', -0.5);
