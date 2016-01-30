@@ -9,13 +9,13 @@ Using Colorize.js is very easy. The first thing you have to do is include the Co
     <script src="colorize.js"></script>
     ...
 ```
-Then, call the setInterval() function on the colorize() function. The colorize function take 2 parameter, the element ID and a luminosity value.
+Then, call the setInterval() function on the colorize() function. The colorize function take 2 parameter, the element ID and a luminosity value. You can also set how fastthe colorization effect happens using the second parameter in the setInterval() function.
 ```html
 <html>
   <head>
     <script src="colorize.js"></script>
     <script>
-      setInterval(colorize, 25, 'colorize', -0.25);
+      setInterval(colorize, 75, 'colorize', -0.25);
     </script>
   </head>
   
