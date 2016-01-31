@@ -38,5 +38,9 @@ function colorize(id, luminosity) {
 			if(r == 0 && g == 0 && b == 0) { state = 0;	return; }
 			break;
 	}
-	document.getElementById(id).style.backgroundColor = ColorLuminance(rgbToHex(r, g, b), luminosity);
+	if(luminosity == 0) {
+		document.getElementById(id).style.backgroundColor = rgbToHex(r, g, b);
+	} else {
+		document.getElementById(id).style.backgroundColor = ColorLuminance(rgbToHex(r, g, b), luminosity);
+	}
 }
